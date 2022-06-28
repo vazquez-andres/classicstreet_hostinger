@@ -60,7 +60,7 @@ $usuario=$_POST['nombre'];
 $sql="select producto,precio,nombre_vendedor,fecha from ventas where nombre_vendedor='".$usuario."'";
 $sql2="SELECT SUM(precio) from ventas where nombre_vendedor='".$usuario."'";
 //SELECT SUM(precio)*0.40 from ventas;
-$sql3="SELECT COUNT(id_venta) from ventas";
+$sql3="SELECT COUNT(id_venta) from ventas where nombre_vendedor='".$usuario."'";
 
 
 
@@ -91,9 +91,9 @@ foreach ($dbo->query($sql) as $row) {
 $pdf->Cell($width_cell[0],7,$row['producto'],2,0,'C',$fill);
 $pdf->Cell($width_cell[1],7,$row['nombre_vendedor'],2,0,'C',$fill);
 $pdf->Cell($width_cell[2],7,$row['fecha'],2,0,'C',$fill);
-$precio_empleado=$row['precio'];
+$precio_empleado=$row['precio']*0.40;
 
-$pdf->Cell($width_cell[3],7,"$ ".$row['precio'],2,1,'C',$fill);
+$pdf->Cell($width_cell[3],7,"$ ".$precio_empleado,2,1,'C',$fill);
 //to give alternate background fill  color to rows//
 $fill = !$fill;
 
