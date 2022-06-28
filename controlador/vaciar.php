@@ -25,11 +25,9 @@ if($zip->open($nombre_zip, ZipArchive::CREATE) === true){
     //header ("Location: $nombre_zip");
 }
 
-	//$sql2 = "truncate table ventas;";
-	
-	//$query2 = $pdo->prepare($sql2);
-	
-	//$query2->execute();
+	$sql2 = "truncate table ventas;";
+	$query2 = $pdo->prepare($sql2);
+	$query2->execute();
 
 		
 } catch (PDOException $e) {
