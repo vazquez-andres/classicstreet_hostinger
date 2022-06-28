@@ -100,9 +100,8 @@ foreach ($dbo->query($sql2) as $row) {
     $pdf->SetX(10);
     $resultado=$row['SUM(precio)'];
     $f = new NumberFormatter("es", NumberFormatter::SPELLOUT);
-    $pdf->MultiCell(129,3," (".(mb_strtoupper($f->format($resultado)))." PESOS) MXN.",0,'R');
     $pdf->Cell($width_cell[4],7,'TOTAL: ',2,0,'R',true);
-    $pdf->Cell($width_cell[5],7,"$ ".$resultado,2,0,'L',$fill);
+    $pdf->Cell($width_cell[5],7,"$ ".$resultado." (".(mb_strtoupper($f->format($resultado)))." PESOS) MXN.",2,0,'L',$fill);
     //to give alternate background fill  color to rows//
     $fill = !$fill; 
     }
