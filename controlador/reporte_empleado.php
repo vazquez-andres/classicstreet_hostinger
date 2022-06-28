@@ -55,8 +55,10 @@ $pdf->SetY(40);
 
 require "config.php";//connection to database
 //SQL to get 10 records
-$sql="select * from ventas";
-$sql2="SELECT SUM(precio) from ventas";
+$usuario=$_POST['nombre'];
+
+$sql="select producto,precio,nombre_vendedor,fecha from ventas where nombre_vendedor='".$usuario."'";
+$sql2="SELECT SUM(precio) from ventas where nombre_vendedor='".$usuario."'";
 //SELECT SUM(precio)*0.40 from ventas;
 $sql3="SELECT COUNT(id_venta) from ventas";
 
