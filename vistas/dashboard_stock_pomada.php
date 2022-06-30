@@ -12,7 +12,13 @@ try {
         </tr>
         <?php
     }
-
+    if($rs['cantidad']<3){
+        echo'<script type="text/javascript">
+        alert("El stock de pomada esta por terminarse");
+        
+        </script>';
+    
+    }
 } catch (PDOException $e) {
 	echo 'PDOException : '.  $e->getMessage();
 }
