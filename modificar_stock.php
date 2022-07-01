@@ -211,7 +211,7 @@ if($filas['id_cargo']=='1'){ //administrador
                                             <div class="form-row">
                                                 <div class="col-md-3">
                                                     <div class="position-relative form-group">
-                                                     <input name="id" id="id" placeholder="Codigo del Producto" type="text"class="form-control">
+                                                     <input name="id" id="id" placeholder="Codigo del Producto" type="text" readonly class="form-control">
                                                     </div>
                                                 </div>
                                                
