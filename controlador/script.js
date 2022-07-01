@@ -118,6 +118,14 @@ function borrar_stock(id) {
 		ajax (url, method, params, container_id, loading_text) ;
 	}
 }
+function modal_stock(id,producto,descripcion,cantidad) {
+		
+		
+	document.querySelector('input[name="id"]').value =id;
+	document.querySelector('input[name="producto"]').value =producto;
+	document.querySelector('input[name="descripcion"]').value =descripcion;
+	document.querySelector('input[name="cantidad"]').value =cantidad;
+}
 
 function borrar_venta(id) {
 	if (confirm('¿Confirma eliminar esta venta?')) {

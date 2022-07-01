@@ -257,7 +257,7 @@ if($filas['id_cargo']=='1'){ //administrador
                                                     
                                                     include('controlador/conexion.php');
                                                     $pdo = connect();
-                                                    include('vistas/lista_stock.php'); 
+                                                    include('vistas/lista_stock_modificar.php'); 
                                                     ?>
                                                 </div>
 
@@ -275,13 +275,16 @@ if($filas['id_cargo']=='1'){ //administrador
                 </div>
                 
             </div>
-            <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
         </div>
     </div>
     <script type="text/javascript" src="./assets/scripts/main.js"></script>
     <script type="text/javascript" src="controlador/script.js"></script>
     </body>
     </html>
+ 
+
+
+
 
     <?php 
 }else{
