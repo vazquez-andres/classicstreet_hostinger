@@ -26,7 +26,7 @@ if($filas['id_cargo']=='1'){ //administrador
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
         <meta name="description" content="This is an example dashboard created using build-in elements and components.">
         <meta name="msapplication-tap-highlight" content="no">
-        
+        <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
         <link href="./main.css" rel="stylesheet"></head>
         <body>
             <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
@@ -316,6 +316,7 @@ if($filas['id_cargo']=='1'){ //administrador
 </div>
 <script type="text/javascript" src="./assets/scripts/main.js"></script>
 <script type="text/javascript" src="controlador/script.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
 </body>
 </html>
 
