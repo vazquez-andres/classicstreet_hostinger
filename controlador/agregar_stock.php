@@ -3,7 +3,7 @@
 include('conexion.php');
 $pdo = connect();
 try {
-	$sql = "INSERT INTO stock (producto, descripcion,cantidad) VALUES (:producto, :descripcion,:cantidad)";
+	$sql = "call sp_agregarStock(:producto, :descripcion,:cantidad);";
 	$query = $pdo->prepare($sql);
 	
 	$query->bindParam(':producto', $_POST['producto'], PDO::PARAM_STR);
