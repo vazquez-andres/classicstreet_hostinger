@@ -10,7 +10,7 @@
                     <th>Puesto</th>
                     <th>Borrar</th>
                     <?php
-                    $sql = "SELECT * FROM usuarios ;";
+                    $sql = "call sp_listarUsuarios;";
                     $query = $pdo->prepare($sql);
                     $query->execute();
                     $list = $query->fetchAll();

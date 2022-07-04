@@ -1,6 +1,6 @@
 <?php
 try {
-    $sql = "SELECT cantidad FROM stock WHERE producto='minoxidil';";
+    $sql = "call sp_vistaMinoxidil;";
     $query = $pdo->prepare($sql);
     $query->execute();
     $list = $query->fetchAll();

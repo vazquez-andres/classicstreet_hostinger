@@ -6,7 +6,7 @@
 include('controlador/conexion.php');
 $pdo = connect();
 try {
-    $sql = "SELECT * FROM stock";
+    $sql = "call sp_listarStock;";
     $query = $pdo->prepare($sql);
     $query->execute();
     $list = $query->fetchAll();

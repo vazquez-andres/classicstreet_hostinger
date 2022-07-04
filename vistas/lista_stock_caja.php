@@ -11,7 +11,7 @@
                     <th>Cantidad</th>
 
                     <?php
-                    $sql = "SELECT * FROM stock ;";
+                    $sql = "call sp_listarStock;";
                     $query = $pdo->prepare($sql);
                     $query->execute();
                     $list = $query->fetchAll();

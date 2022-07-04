@@ -10,7 +10,7 @@
                     <th>Fecha</th>
 
                     <?php
-                    $sql = "SELECT * FROM ventas where nombre_vendedor='".$nombre."';";
+                    $sql = "CALL sp_listarVentasCaja('".$nombre."');";
                     $query = $pdo->prepare($sql);
                     $query->execute();
                     $list = $query->fetchAll();

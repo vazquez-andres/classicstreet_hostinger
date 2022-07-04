@@ -10,7 +10,7 @@
                     <th>Fecha</th>
                     <th>Borrar</th>
                     <?php
-                    $sql = "SELECT * FROM ventas ;";
+                    $sql = "call sp_listarVentas;";
                     $query = $pdo->prepare($sql);
                     $query->execute();
                     $list = $query->fetchAll();

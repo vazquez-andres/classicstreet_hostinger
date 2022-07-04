@@ -2,7 +2,7 @@
 include('controlador/conexion.php');
 $pdo = connect();
 try {
-    $sql = "SELECT SUM(precio) FROM ventas; ;";
+    $sql = "call sp_calcularSueldo;";
     $query = $pdo->prepare($sql);
     $query->execute();
     $list = $query->fetchAll();

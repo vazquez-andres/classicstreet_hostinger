@@ -7,7 +7,7 @@
 include('controlador/conexion.php');
 $pdo = connect();
 try {
-    $sql = "SELECT * FROM usuarios";
+    $sql = "call sp_listarUsuarios;";
     $query = $pdo->prepare($sql);
     $query->execute();
     $list = $query->fetchAll();

@@ -1,6 +1,6 @@
 <?php
 try {
-    $sql = "SELECT cantidad FROM stock WHERE codigo=16;";
+    $sql = "call sp_vistaAfter";
     $query = $pdo->prepare($sql);
     $query->execute();
     $list = $query->fetchAll();

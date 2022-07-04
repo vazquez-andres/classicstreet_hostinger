@@ -1,6 +1,6 @@
 <?php
 try {
-    $sql = "SELECT SUM(precio) FROM ventas; ;";
+    $sql = "call sp_calcularGanancia;";
     $query = $pdo->prepare($sql);
     $query->execute();
     $list = $query->fetchAll();
