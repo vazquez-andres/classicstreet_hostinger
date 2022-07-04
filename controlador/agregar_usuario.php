@@ -4,7 +4,7 @@ include('conexion.php');
 $pdo = connect();
 // agregar alumnos
 try {
-	$sql = "INSERT INTO usuarios (nombre, usuario, password, id_cargo) VALUES (:usuario,:correo, :password,:puesto)";
+	$sql = "CALL sp_agregarUsuario(:usuario, :correo, :password, :puesto); ";
 	$query = $pdo->prepare($sql);
 	
 	$query->bindParam(':usuario', $_POST['usuario'], PDO::PARAM_STR);
