@@ -3,7 +3,7 @@
 include('conexion.php');
 $pdo = connect();
 try {
-	$sql = "DELETE FROM stock WHERE codigo = :id";
+	$sql = "call sp_borrarStock(:id)";
 	$query = $pdo->prepare($sql);
 	$query->bindParam(':id', $_POST['id'], PDO::PARAM_INT);
 	$query->execute();

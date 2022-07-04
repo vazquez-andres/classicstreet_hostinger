@@ -4,7 +4,7 @@ include('conexion.php');
 $pdo = connect();
 // Borrar alumno con PDO
 try {
-	$sql = "DELETE FROM usuarios WHERE id = :id";
+	$sql = "call sp_borrarUsuario(:id);";
 	$query = $pdo->prepare($sql);
 	$query->bindParam(':id', $_POST['id'], PDO::PARAM_INT);
 	$query->execute();
