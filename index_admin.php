@@ -185,7 +185,13 @@ if($filas['id_cargo']=='1'){ //administrador
                                                 Modificar Stock
                                             </a>
                                         </li>
-                                        
+                                        <li class="app-sidebar__heading">SEGURIDAD</li>
+                                        <li>
+                                            <a href="miHome.php">
+                                                <i class="metismenu-icon pe-7s-camera"></i>
+                                                Xiaomi Mi Home App
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -286,8 +292,8 @@ if($filas['id_cargo']=='1'){ //administrador
                                                         <div class="widget-heading">Stock</div>
                                                         <div class="widget-subheading">Stock Minoxidil Disponible</div>
                                                     </div>
-                                                    <div class="widget-content-right">
-                                                        <div class="widget-numbers text-danger"><?php include('vistas/dashboard_stock_minoxidil.php'); ?></div>
+                                                    <div class="widget-content-right" id="test">
+                                                        <div class="widget-numbers text-danger" ><?php include('vistas/dashboard_stock_minoxidil.php'); ?></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -343,7 +349,6 @@ if($filas['id_cargo']=='1'){ //administrador
                     </div>
                 </div>
                 <script type="text/javascript" src="./assets/scripts/main.js"></script>
-
                 <script type="text/javascript" src="controlador/script.js"></script>
 
             </body>

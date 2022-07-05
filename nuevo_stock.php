@@ -22,7 +22,6 @@ if($filas['id_cargo']=='1'){ //administrador
         <meta http-equiv="Content-Language" content="en">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>Sistema de Administración Classic Street</title>
-        <script type="text/javascript" src="script.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
         <meta name="description" content="This is an example dashboard created using build-in elements and components.">
         <meta name="msapplication-tap-highlight" content="no">
@@ -183,7 +182,13 @@ if($filas['id_cargo']=='1'){ //administrador
                                             Modificar Stock
                                         </a>
                                     </li>
-                                    
+                                    <li class="app-sidebar__heading">SEGURIDAD</li>
+                                        <li>
+                                            <a href="miHome.php">
+                                                <i class="metismenu-icon pe-7s-camera"></i>
+                                                Xiaomi Mi Home App
+                                            </a>
+                                        </li>
                                 </ul>
                             </div>
                         </div>
@@ -266,7 +271,6 @@ if($filas['id_cargo']=='1'){ //administrador
                     </div>
                     
                 </div>
-                <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
             </div>
         </div>
         <script type="text/javascript" src="./assets/scripts/main.js"></script>

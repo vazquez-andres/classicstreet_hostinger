@@ -184,7 +184,13 @@ if($filas['id_cargo']=='1'){ //administrador
                                             Modificar Stock
                                         </a>
                                     </li>
-
+                                    <li class="app-sidebar__heading">SEGURIDAD</li>
+                                        <li>
+                                            <a href="miHome.php">
+                                                <i class="metismenu-icon pe-7s-camera"></i>
+                                                Xiaomi Mi Home App
+                                            </a>
+                                        </li>
                                 </ul>
                             </div>
                         </div>

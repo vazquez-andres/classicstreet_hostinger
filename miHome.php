@@ -4,7 +4,7 @@ session_start();
 
 $nombre = $_SESSION['nombre'];
 
-include "controlador/conexion_bd.php";
+include 'controlador/conexion_bd.php';
 
 $consulta="SELECT * FROM usuarios where usuario='$nombre' ";
 $resultado=mysqli_query($conexion,$consulta);
@@ -12,6 +12,8 @@ $resultado=mysqli_query($conexion,$consulta);
 $filas=mysqli_fetch_array($resultado);
 
 if($filas['id_cargo']=='1'){ //administrador
+  
+
     ?>
     <!doctype html>
     <html lang="en">
@@ -62,6 +64,7 @@ if($filas['id_cargo']=='1'){ //administrador
                         </span>
                     </div>    <div class="app-header__content">
                         <div class="app-header-left">
+                            
                             </div>
                             <div class="app-header-right">
                                 <div class="header-btn-lg pr-0">
@@ -81,25 +84,25 @@ if($filas['id_cargo']=='1'){ //administrador
                                             </div>
                                             <div class="widget-content-left  ml-3 header-user-info">
                                                 <div class="widget-heading">
-                                                    <?php  
+                                                 <?php  
                                                  
                                                  $nombre = $_SESSION['nombre'];
                                                  echo $nombre;
                                                  
                                                  ?>
-                                                </div>
-                                                <div class="widget-subheading">
-                                                  ADMINISTRADOR <BR>Sesion Iniciada
-                                              </div>
-                                          </div>
-                                          
-                                      </div>
-                                  </div>
-                              </div>        </div>
-                          </div>
-                      </div>       
-                      
-                      <div class="app-main">
+                                             </div>
+                                             <div class="widget-subheading">
+                                                ADMINISTRADOR <BR>Sesion Iniciada
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>        </div>
+                        </div>
+                    </div>       
+                    
+                    <div class="app-main">
                         <div class="app-sidebar sidebar-shadow">
                             <div class="app-header__logo">
                                 <div class="logo-src"></div>
@@ -132,23 +135,23 @@ if($filas['id_cargo']=='1'){ //administrador
                                 </span>
                             </div>    <div class="scrollbar-sidebar">
                                 <div class="app-sidebar__inner">
-                                 <ul class="vertical-nav-menu">
-                                    <li class="app-sidebar__heading">INICIO</li>
-                                    <li>
-                                        <a href="index_admin.php" class="mm-active">
-                                            <i class="metismenu-icon pe-7s-home"></i>
-                                            Dashboard
-                                        </a>
-                                    </li>
-                                    <li class="app-sidebar__heading">Ventas</li>
-                                    <li>
+                                    <ul class="vertical-nav-menu">
+                                        <li class="app-sidebar__heading">INICIO</li>
+                                        <li>
+                                            <a href="index_admin.php" class="mm-active">
+                                                <i class="metismenu-icon pe-7s-home"></i>
+                                                Dashboard
+                                            </a>
+                                        </li>
+                                        <li class="app-sidebar__heading">Ventas</li>
+                                        <li>
 
-                                        <a href="ventas.php" >
-                                            <i class="metismenu-icon pe-7s-cart"></i>
-                                            Vender
-                                        </a>
-                                    </li>
-                                    <li class="app-sidebar__heading">Reportes</li>
+                                            <a href="ventas.php" >
+                                                <i class="metismenu-icon pe-7s-cart"></i>
+                                                Vender
+                                            </a>
+                                        </li>
+                                        <li class="app-sidebar__heading">Reportes</li>
                                         <li>
 
                                             <a href="reportes.php" >
@@ -156,132 +159,101 @@ if($filas['id_cargo']=='1'){ //administrador
                                                 Generar Reportes
                                             </a>
                                         </li>
-                                    <li class="app-sidebar__heading">Usuarios</li>
-                                    <li>
-                                        <a href="agregar_usuarios.php">
-                                            <i class="metismenu-icon pe-7s-add-user"></i>
-                                            Agregar Usuarios
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="restablecer_password.php">
-                                            <i class="metismenu-icon pe-7s-key"></i>
-                                            Restablecer Password
-                                        </a>
-                                    </li>
-                                    <li class="app-sidebar__heading">Stock</li>
-                                    <li>
-                                        <a href="nuevo_stock.php">
-                                            <i class="metismenu-icon pe-7s-upload"></i>
-                                            Agregar Stock
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="modificar_stock.php">
-                                            <i class="metismenu-icon pe-7s-refresh"></i>
-                                            Modificar Stock
-                                        </a>
-                                    </li>
-                                    <li class="app-sidebar__heading">SEGURIDAD</li>
+                                        <li class="app-sidebar__heading">Usuarios</li>
+                                        <li>
+                                            <a href="agregar_usuarios.php">
+                                                <i class="metismenu-icon pe-7s-add-user"></i>
+                                                Agregar Usuarios
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="restablecer_password.php">
+                                                <i class="metismenu-icon pe-7s-key"></i>
+                                                Restablecer Password
+                                            </a>
+                                        </li>
+                                        <li class="app-sidebar__heading">Stock</li>
+                                        <li>
+                                            <a href="nuevo_stock.php">
+                                                <i class="metismenu-icon pe-7s-upload"></i>
+                                                Agregar Stock
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="modificar_stock.php">
+                                                <i class="metismenu-icon pe-7s-refresh"></i>
+                                                Modificar Stock
+                                            </a>
+                                        </li>
+                                        <li class="app-sidebar__heading">SEGURIDAD</li>
                                         <li>
                                             <a href="miHome.php">
                                                 <i class="metismenu-icon pe-7s-camera"></i>
                                                 Xiaomi Mi Home App
                                             </a>
                                         </li>
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </div>    <div class="app-main__outer">
-                        <div class="app-main__inner">
-                            <div class="app-page-title">
-                                <div class="page-title-wrapper">
-                                    <div class="page-title-heading">
-                                        <div class="page-title-icon">
-                                            <i class="fa fa-key icon-gradient bg-malibu-beach">
-                                            </i>
-                                        </div>
-                                        <div>Restablecer Password
-                                            <div class="page-title-subheading">Aqui podrás restablecer la contraseña de los usuarios.
+                        </div>    <div class="app-main__outer">
+                            <div class="app-main__inner">
+                                <div class="app-page-title">
+                                    <div class="page-title-wrapper">
+                                        <div class="page-title-heading">
+                                            <div class="page-title-icon">
+                                                <i class="pe-7s-camera icon-gradient bg-mean-fruit">
+                                                </i>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-
-
-                                <div class="main-card mb-3 card">
-                                    <div class="card-body"><h5 class="card-title">Completa los Campos.</h5>
-                                        <form class="">
-                                            <div class="form-row">
-                                                <div class="col-md-4">
-                                                    <div class="position-relative form-group">
-                                                     <input name="usuario" id="usuario" placeholder="Usuario" type="text"class="form-control">
-                                                    </div>
+                                            <div>Sistema de Vigilancia
+                                                <div class="page-title-subheading">Xiaomi Mi Home App
                                                 </div>
-                                                 <div class="col-md-4">
-                                                    <div class="position-relative form-group">
-                                                    <input name="correo" id="correo" placeholder="Correo@ejemplo.com" type="email" class="form-control">
-                                                    </div>
-                                                </div> 
-                                                <div class="col-md-4">
-                                                    <div class="position-relative form-group">
-                                                   <input name="password" id="password" placeholder="contraseña" type="password" class="form-control">
-                                                    </div>
-                                                </div> 
                                             </div>
-                                             <input type="button" class="mt-2 btn btn-success" value="Guardar" onclick="restablecer()">
-
-                                        </form>
+                                        </div>
                                     </div>
-                                </div>
+                                </div>           
+                                 
+                                
 
-                            <div class="main-card mb-3 card">
-                               
-                                    <div>
-
+                                <div class="row">
+                                    <div class="col-md-12">
                                            
-                                           <div class="panel panel-default">
-                                            <div class="panel-body">
-                                             
-                                                
-                                                <div id="list_container">
-                                                    <?php 
-                                                    
-                                                    include('controlador/conexion.php');
-                                                    $pdo = connect();
-                                                    include('vistas/lista_usuarios.php'); 
-                                                    ?>
-                                                </div>
+                                               
+                                                <center>
+                                               <input type="image" src="https://ds-blobs-2.cdn.devapps.ru/24740646.png" width="400" onclick="abrir()" /> 
+                                                </center>
+                                       
 
-                                                <!-- lista_contenedor --> 
-                                            </div>
-                                            <!-- content -->
-                                            
-                                        </div>
-                                        
-                                    </div>
-                               
+                                </div>
+
+
+                                
                             </div>
+
+                            
                         </div>
-                        
+
+                        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
                     </div>
                 </div>
-                
-            </div>
-            <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-        </div>
-    </div>
-    <script type="text/javascript" src="./assets/scripts/main.js"></script>
-    <script type="text/javascript" src="controlador/script.js"></script>
-    </body>
-    </html>
+                <script type="text/javascript" src="./assets/scripts/main.js"></script>
+                <script type="text/javascript" src="controlador/script.js"></script>
 
-    <?php 
-}else{
+            </body>
+                </html>
 
-    header('Location: index.php');
+                <?php 
+            }else{
 
+                header('Location:index.php');
+
+            }
+
+            ?>
+
+<script type="text/javascript" charset="utf-8"> 
+function abrir() {
+
+window.location = "MiHome://MiHome.app";
 }
 
-?>
+</script>
