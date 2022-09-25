@@ -91,7 +91,7 @@ foreach ($dbo->query($sql) as $row) {
 $pdf->Cell($width_cell[0],7,$row['producto'],2,0,'C',$fill);
 $pdf->Cell($width_cell[1],7,$row['nombre_vendedor'],2,0,'C',$fill);
 $pdf->Cell($width_cell[2],7,$row['fecha'],2,0,'C',$fill);
-$precio_empleado=$row['precio']*0.40;
+$precio_empleado=$row['precio']*0.50;
 
 $pdf->Cell($width_cell[3],7,"$ ".$precio_empleado,2,1,'C',$fill);
 //to give alternate background fill  color to rows//
@@ -103,7 +103,7 @@ foreach ($dbo->query($sql2) as $row) {
     $resultado=$row['SUM(precio)'];
     $f = new NumberFormatter("es", NumberFormatter::SPELLOUT);
     $pdf->Cell($width_cell[4],7,'TOTAL: ',2,0,'R',true);
-    $pdf->Cell($width_cell[5],7,"$ ".($resultado*0.40)." (".(mb_strtoupper($f->format($resultado*0.40)))." PESOS) MXN.",2,0,'L',$fill);
+    $pdf->Cell($width_cell[5],7,"$ ".($resultado*0.50)." (".(mb_strtoupper($f->format($resultado*0.40)))." PESOS) MXN.",2,0,'L',$fill);
     //to give alternate background fill  color to rows//
     $fill = !$fill; 
     }
