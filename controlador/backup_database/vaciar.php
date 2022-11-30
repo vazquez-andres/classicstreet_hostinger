@@ -7,7 +7,7 @@ session_start();
 
 try {
 	
-
+date_default_timezone_set('America/Mexico_City');
 $host = "localhost";
 $nombre = "u917997591_classic_street";
 $usuario = "u917997591_andres";
@@ -17,7 +17,7 @@ $nombre_sql = $nombre .'_'.$fecha.'.sql';
 $dump = "mysqldump -h$host -u$usuario -p$password $nombre > $nombre_sql";
 exec ($dump);
 $zip = new ZipArchive();
-$nombre_zip = ''.'_'.$fecha.'.zip';
+$nombre_zip = 'backup'.'_'.$fecha.'.zip';
 if($zip->open($nombre_zip, ZipArchive::CREATE) === true){
     $zip->addFile($nombre_sql);
     $zip->close();
