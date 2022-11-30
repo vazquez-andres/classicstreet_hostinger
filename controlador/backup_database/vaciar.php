@@ -12,12 +12,12 @@ $host = "localhost";
 $nombre = "u917997591_classic_street";
 $usuario = "u917997591_andres";
 $password = "CSBS2022db";
-$fecha = date('Ymd_His'); 
+$fecha = date('Y-m-d'); 
 $nombre_sql = $nombre .'_'.$fecha.'.sql';
 $dump = "mysqldump -h$host -u$usuario -p$password $nombre > $nombre_sql";
 exec ($dump);
 $zip = new ZipArchive();
-$nombre_zip = $nombre.'_'.$fecha.'.zip';
+$nombre_zip = ''.'_'.$fecha.'.zip';
 if($zip->open($nombre_zip, ZipArchive::CREATE) === true){
     $zip->addFile($nombre_sql);
     $zip->close();
