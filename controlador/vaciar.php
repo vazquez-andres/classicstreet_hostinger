@@ -9,9 +9,9 @@ try {
 	
 
 $host = "localhost";
-$nombre = "u119512436_classic_street";
-$usuario = "u119512436_andres";
-$password = "Andresflash100";
+$nombre = "u917997591_classic_street";
+$usuario = "u917997591_andres";
+$password = "CSBS2022db";
 $fecha = date('Ymd_His'); 
 $nombre_sql = $nombre .'_'.$fecha.'.sql';
 $dump = "mysqldump -h$host -u$usuario -p$password $nombre > $nombre_sql";
@@ -19,9 +19,9 @@ exec ($dump);
 $zip = new ZipArchive();
 $nombre_zip = $nombre.'_'.$fecha.'.zip';
 if($zip->open($nombre_zip, ZipArchive::CREATE) === true){
-    $zip->addFile($nombre_sql);
+    $zip->addFile('/backup_database/',$nombre_sql);
     $zip->close();
-    unlink($nombre_sql);
+    unlink($nombre_sql); 
     //header ("Location: $nombre_zip");
 }
 
