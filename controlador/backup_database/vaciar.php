@@ -33,5 +33,5 @@ if($zip->open($nombre_zip, ZipArchive::CREATE) === true){
 	echo 'PDOException : '.  $e->getMessage();
 }
 
-header("location:../ventas.php");
+header("location:../../ventas.php");
 ?>
