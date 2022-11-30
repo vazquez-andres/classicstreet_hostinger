@@ -92,7 +92,7 @@ foreach ($dbo->query($sql) as $row) {
 $pdf->Cell($width_cell[0],7,$row['producto'],2,0,'C',$fill);
 $pdf->Cell($width_cell[1],7,$row['nombre_vendedor'],2,0,'C',$fill);
 $pdf->Cell($width_cell[2],7,$row['fecha'],2,0,'C',$fill);
-$precio_empleado=$row['precio']*0.50;
+$precio_empleado=$row['precio']*0.40;
 
 $pdf->Cell($width_cell[3],7,"$ ".$precio_empleado,2,1,'C',$fill);
 //to give alternate background fill  color to rows//
