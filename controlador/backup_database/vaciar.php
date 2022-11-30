@@ -17,12 +17,11 @@ $nombre_sql = $nombre .'_'.$fecha.'.sql';
 $dump = "mysqldump -h$host -u$usuario -p$password $nombre > $nombre_sql";
 exec ($dump);
 $zip = new ZipArchive();
-$nombre_zip = '/backup_database'.$nombre.'_'.$fecha.'.zip';
+$nombre_zip = $nombre.'_'.$fecha.'.zip';
 if($zip->open($nombre_zip, ZipArchive::CREATE) === true){
     $zip->addFile($nombre_sql);
     $zip->close();
     unlink($nombre_sql); 
-    //header ("Location: $nombre_zip");
 }
 
 	$sql2 = "truncate table ventas;";
@@ -34,6 +33,5 @@ if($zip->open($nombre_zip, ZipArchive::CREATE) === true){
 	echo 'PDOException : '.  $e->getMessage();
 }
 
-// Lista de alumnos a ver
 header("location:../ventas.php");
 ?>

@@ -246,7 +246,7 @@ if($filas['id_cargo']=='1'){ //administrador
                                                 
                                             </div>
                                             <input type="button" class="mt-2 btn btn-success" value="Vender" onclick="vender()">
-                                            <a href="controlador/vaciar.php"><input type="button" class="mt-2 btn btn-danger" value="Restablecer Estadisticas"></a>
+                                            <a href="controlador/backup_database/vaciar.php"><input type="button" class="mt-2 btn btn-danger" value="Restablecer Estadisticas"></a>
 
                                         </form>
                                     </div>
