@@ -1,8 +1,8 @@
 <?php
 $host_name = "localhost";
-$database = "u119512436_classic_street"; 
-$username = "u119512436_andres";         
-$password = "Andresflash100";     
+$database = "u917997591_classic_street"; 
+$username = "u917997591_andres";         
+$password = "CSBS2022db";     
 
 try {
 $dbo = new PDO('mysql:host='.$host_name.';dbname='.$database, $username, $password);
