@@ -24,6 +24,7 @@ function Header()
     $this->Cell(338,10,utf8_decode('Tel. 5550512885'),0,0,'C');
     // Line break
     $this->Ln(20);
+    date_default_timezone_set('America/Mexico_City');
     $diassemana = array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sábado");
     $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
     $dias = array("01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31");
