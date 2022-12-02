@@ -37,6 +37,12 @@
                                                 Restablecer Password
                                             </a>
                                         </li>
+                                        <li>
+                                            <a href="asignar_rol.php">
+                                                <i class="metismenu-icon pe-7s-key"></i>
+                                                Asignar Rol
+                                            </a>
+                                        </li>                                        
                                         <li class="app-sidebar__heading">Stock</li>
                                         <li>
                                             <a href="nuevo_stock.php">
