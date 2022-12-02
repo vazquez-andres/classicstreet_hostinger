@@ -1,6 +1,5 @@
 <?php
 
-include('conexion.php');
 $pdo = connect();
 try {
     $cargo= $_POST['cargo'];
