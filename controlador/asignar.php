@@ -13,7 +13,7 @@ try {
     else{
         $cargo='2';
     }
-
+    echo $cargo;
 	$query->bindParam(':cargo', $cargo, PDO::PARAM_STR);
 	$query->execute();
 } catch (PDOException $e) {
