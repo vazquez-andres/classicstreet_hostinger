@@ -68,7 +68,7 @@ function vender() {
 function asignar_rol() {
 	var url = 'controlador/asignar.php';
 	var method = 'POST';
-	var params = 'nombre='+document.getElementById('usuario').value;
+	var params = 'usuario='+document.getElementById('usuario').value;
 	params += '&cargo='+document.getElementById('cargo').value;
 	var container_id = 'list_container' ;
 	var loading_text = '<img src="fb_loading.gif">' ;
