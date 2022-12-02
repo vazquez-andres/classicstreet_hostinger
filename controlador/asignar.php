@@ -14,7 +14,7 @@ try {
         $cargo=2;
     }
 
-	$query->bindParam(':cargo', '1', PDO::PARAM_STR);
+	$query->bindParam(':cargo', $cargo, PDO::PARAM_STR);
 	$query->execute();
 } catch (PDOException $e) {
 	echo 'PDOException : '.  $e->getMessage();
