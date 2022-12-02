@@ -65,7 +65,7 @@
                                         </li>
                                         <li class="app-sidebar__heading">MAQUINA DEL TIEMPO</li>
                                         <li>
-                                            <a href="miHome.php">
+                                            <a href="backup.php">
                                                 <i class="metismenu-icon pe-7s-server"></i>
                                                 Cargar Base de Datos
                                             </a>
