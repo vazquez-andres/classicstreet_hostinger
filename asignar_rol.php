@@ -167,7 +167,7 @@ if($filas['id_cargo']=='1'){ //administrador
                                                       include('vistas/select_cargo.php');
                                                       ?>  
                                                 </div> 
-                                                <div class="col-md-3">
+                                                <div class="col-md-12">
                                                 <input type="button" class="mt-2 btn btn-success" value="Guardar" onclick="agregar_usuario()">
                                                 </div> 
                                             
