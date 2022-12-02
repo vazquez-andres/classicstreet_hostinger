@@ -164,12 +164,12 @@ if($filas['id_cargo']=='1'){ //administrador
                                                 </div>
                                                  <div class="col-md-3">
                                                     <div class="position-relative form-group">
-                                                    <input name="correo" id="correo" placeholder="Correo@ejemplo.com" type="email" class="form-control">
+                                                    <input name="cargo" id="cargo" placeholder="Correo@ejemplo.com" type="email" class="form-control">
                                                     </div>
                                                 </div> 
                                                    
                                             </div>
-                                             <input type="button" class="mt-2 btn btn-success" value="Guardar" onclick="agregar_usuario()">
+                                             <input type="button" class="mt-2 btn btn-success" value="Guardar" onclick="asignar_rol()">
 
                                         </form>
                                     </div>
