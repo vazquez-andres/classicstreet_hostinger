@@ -159,20 +159,31 @@ if($filas['id_cargo']=='1'){ //administrador
                                             <div class="form-row">
                                                 <div class="col-md-3">
                                                     <div class="position-relative form-group">
-                                                    <?php 
-                                                        include('vistas/select_usuarios.php');
-                                                    ?>  
+                                                     <input name="usuario" id="usuario" placeholder="Usuario" type="text"class="form-control">
                                                     </div>
                                                 </div>
                                                  <div class="col-md-3">
                                                     <div class="position-relative form-group">
-                                                    <?php 
-                                                        include('vistas/select_cargo.php');
-                                                    ?>  
-                                                     </div>
+                                                    <input name="correo" id="correo" placeholder="Correo@ejemplo.com" type="email" class="form-control">
+                                                    </div>
                                                 </div> 
-
-                                             <input type="button" class="mt-2 btn btn-success" value="Guardar" onclick="asignar_rol()">
+                                                <div class="col-md-3">
+                                                    <div class="position-relative form-group">
+                                                   <input name="password" id="password" placeholder="contraseña" type="password" class="form-control">
+                                                    </div>
+                                                </div> 
+                                                 <div class="col-md-3">
+                                                    <div class="position-relative form-group">
+                                                    <select class="form-control" id="puesto">
+                                                    <option>Puesto</option>
+                                                    <option value="1">Administrador</option>
+                                                    <option value="2">Ventas</option>
+                                                    
+                                                </select>
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                             <input type="button" class="mt-2 btn btn-success" value="Guardar" onclick="agregar_usuario()">
 
                                         </form>
                                     </div>
