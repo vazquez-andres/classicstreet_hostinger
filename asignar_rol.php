@@ -159,13 +159,17 @@ if($filas['id_cargo']=='1'){ //administrador
                                             <div class="form-row">
                                                 <div class="col-md-3">
                                                     <div class="position-relative form-group">
-                                                     <input name="usuario" id="usuario" placeholder="Usuario" type="text"class="form-control">
+                                                    <?php 
+                                                        include('vistas/select_usuarios.php');
+                                                    ?>  
                                                     </div>
                                                 </div>
                                                  <div class="col-md-3">
                                                     <div class="position-relative form-group">
-                                                    <input name="correo" id="correo" placeholder="Correo@ejemplo.com" type="email" class="form-control">
-                                                    </div>
+                                                    <?php 
+                                                        include('vistas/select_cargo.php');
+                                                    ?>  
+                                                     </div>
                                                 </div> 
                                                 <div class="col-md-3">
                                                     <div class="position-relative form-group">
