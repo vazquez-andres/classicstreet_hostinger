@@ -1,13 +1,13 @@
 <?php
 include 'conexion_bd.php';
 $usuario=$_POST['nombre'];
-$contra=$_POST['password'];
+$encriptado = hash("sha256",$_POST['password']);
 session_start();
 $_SESSION['nombre']=$usuario;
 
 
 
-$consulta="SELECT * FROM usuarios where usuario='$usuario' and password='$contra'";
+$consulta="SELECT * FROM usuarios where usuario='$usuario' and password='$encriptado'";
 $resultado=mysqli_query($conexion,$consulta);
 
 $filas=mysqli_fetch_array($resultado);
