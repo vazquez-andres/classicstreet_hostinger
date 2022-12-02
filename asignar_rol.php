@@ -141,12 +141,12 @@ if($filas['id_cargo']=='1'){ //administrador
                             <div class="app-page-title">
                                 <div class="page-title-wrapper">
                                     <div class="page-title-heading">
-                                        <div class="page-title-icon">º
+                                        <div class="page-title-icon">
                                             <i class="fa fa-user icon-gradient bg-malibu-beach">
                                             </i>
                                         </div>
-                                        <div>Añadir Usuarios
-                                            <div class="page-title-subheading">Aqui podrás agregar usuarios nuevos.
+                                        <div>Asignar Rol
+                                            <div class="page-title-subheading">Aqui podrás asignar roles a cualquier usuario.
                                             </div>
                                         </div>
                                     </div>
