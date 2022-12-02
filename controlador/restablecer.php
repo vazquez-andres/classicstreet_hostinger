@@ -6,8 +6,8 @@ $pdo = connect();
 try {
 	$sql="UPDATE usuarios SET password = :password WHERE nombre=:usuario and usuario=:correo";
 	$query = $pdo->prepare($sql);
-	
-	$query->bindParam(':password', $_POST['password'], PDO::PARAM_STR);
+	$encriptado = hash("sha256",$_POST['password']);
+	$query->bindParam(':password', $encriptado, PDO::PARAM_STR);
 	$query->bindParam(':usuario', $_POST['usuario'], PDO::PARAM_STR);
 	$query->bindParam(':correo', $_POST['correo'], PDO::PARAM_STR);
 	
