@@ -63,6 +63,13 @@
                                                 Xiaomi Mi Home App
                                             </a>
                                         </li>
+                                        <li class="app-sidebar__heading">MAQUINA DEL TIEMPO</li>
+                                        <li>
+                                            <a href="miHome.php">
+                                                <i class="metismenu-icon pe-7s-camera"></i>
+                                                Cargar Base de Datos
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
