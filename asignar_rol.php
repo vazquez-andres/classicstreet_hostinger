@@ -155,7 +155,7 @@ if($filas['id_cargo']=='1'){ //administrador
 
                                 <div class="main-card mb-3 card">
                                     <div class="card-body"><h5 class="card-title">Completa los Campos.</h5>
-                                        <form class="">
+                                        <form class=""form-row>
                                             <div class="form-row">
                                                 <div class="col-md-3">
                                                      <?php 
