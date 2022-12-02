@@ -172,7 +172,7 @@ if($filas['id_cargo']=='1'){ //administrador
                                                      </div>
                                                 </div> 
 
-                                             <input type="button" class="mt-2 btn btn-success" value="Guardar" onclick="agregar_usuario()">
+                                             <input type="button" class="mt-2 btn btn-success" value="Guardar" onclick="asignar_rol()">
 
                                         </form>
                                     </div>
