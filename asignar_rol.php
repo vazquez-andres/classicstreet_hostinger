@@ -157,12 +157,12 @@ if($filas['id_cargo']=='1'){ //administrador
                                     <div class="card-body"><h5 class="card-title">Completa los Campos.</h5>
                                         <form class=""form-row>
                                             <div class="form-row">
-                                                <div class="col-md-3">
+                                                <div class="col-md-6">
                                                      <?php 
                                                       include('vistas/select_usuarios.php');
                                                       ?>  
                                                 </div>
-                                                 <div class="col-md-3">
+                                                 <div class="col-md-6">
                                                       <?php 
                                                       include('vistas/select_cargo.php');
                                                       ?>  
