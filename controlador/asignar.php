@@ -8,12 +8,11 @@ try {
 	$query = $pdo->prepare($sql);
 	$query->bindParam(':nombre', $_POST['usuario'], PDO::PARAM_STR);
     if($cargo=='administrador'){
-        $cargo='1';
+        $cargo=1;
     }
     else{
-        $cargo='2';
+        $cargo=2;
     }
-    echo $cargo;
 	$query->bindParam(':cargo', $cargo, PDO::PARAM_STR);
 	$query->execute();
 } catch (PDOException $e) {
