@@ -141,7 +141,7 @@ if($filas['id_cargo']=='1'){ //administrador
                             <div class="app-page-title">
                                 <div class="page-title-wrapper">
                                     <div class="page-title-heading">
-                                        <div class="page-title-icon">
+                                        <div class="page-title-icon">º
                                             <i class="fa fa-user icon-gradient bg-malibu-beach">
                                             </i>
                                         </div>
