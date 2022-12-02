@@ -39,7 +39,7 @@
                                         </li>
                                         <li>
                                             <a href="asignar_rol.php">
-                                                <i class="metismenu-icon pe-7s-key"></i>
+                                                <i class="metismenu-icon pe-7s-tools"></i>
                                                 Asignar Rol
                                             </a>
                                         </li>                                        
@@ -66,7 +66,7 @@
                                         <li class="app-sidebar__heading">MAQUINA DEL TIEMPO</li>
                                         <li>
                                             <a href="miHome.php">
-                                                <i class="metismenu-icon pe-7s-camera"></i>
+                                                <i class="metismenu-icon pe-7s-server"></i>
                                                 Cargar Base de Datos
                                             </a>
                                         </li>
