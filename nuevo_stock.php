@@ -135,7 +135,8 @@ if($filas['id_cargo']=='1'){ //administrador
                                 include('vistas/main_menu.php'); 
 
                             ?>                    
-                      <div class="app-main__outer">
+                    </div>    
+                     <div class="app-main__outer">
                         <div class="app-main__inner">
                             <div class="app-page-title">
                                 <div class="page-title-wrapper">
