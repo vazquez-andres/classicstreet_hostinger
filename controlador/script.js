@@ -65,6 +65,17 @@ function vender() {
 	ajax (url, method, params, container_id, loading_text) ;
 }
 
+function asignar_rol() {
+	var url = 'controlador/asingar_rol.php';
+	var method = 'POST';
+	var params = 'nombre='+document.getElementById('producto').value;
+	params += '&cargo='+document.getElementById('cargo').value;
+
+	var container_id = 'list_container' ;
+	var loading_text = '<img src="fb_loading.gif">' ;
+	ajax (url, method, params, container_id, loading_text) ;
+}
+
 function vender_caja() {
 	var url = 'controlador/vender_producto_caja.php';
 	var method = 'POST';
