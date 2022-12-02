@@ -66,7 +66,7 @@ function vender() {
 }
 
 function asignar_rol() {
-	var url = 'controlador/asingar_rol.php';
+	var url = 'controlador/asignar_rol.php';
 	var method = 'POST';
 	var params = 'nombre='+document.getElementById('producto').value;
 	params += '&cargo='+document.getElementById('cargo').value;
