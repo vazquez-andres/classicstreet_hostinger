@@ -6,7 +6,7 @@ try {
     $cargo= $_POST['cargo'];
 	$sql = "CALL sp_asingarRol(:nombre, :cargo); ";
 	$query = $pdo->prepare($sql);
-	$query->bindParam(':nombre', $_POST['usuario'], PDO::PARAM_STR);
+	$query->bindParam(':nombre', $_POST['nombre'], PDO::PARAM_STR);
     if($cargo=='administrador'){
         $cargo=1;
     }
