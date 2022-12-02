@@ -187,8 +187,6 @@ if($filas['id_cargo']=='1'){ //administrador
                                                 <div id="list_container">
                                                     <?php 
                                                     
-                                                    include('controlador/conexion.php');
-                                                    $pdo = connect();
                                                     include('vistas/lista_usuarios.php'); 
                                                     ?>
                                                 </div>
