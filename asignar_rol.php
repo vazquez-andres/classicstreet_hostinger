@@ -167,10 +167,6 @@ if($filas['id_cargo']=='1'){ //administrador
                                                 </div>
                                                  <div class="col-md-3">
                                                     <div class="position-relative form-group">
-                                                        <?php 
-                                                        
-                                                        include('./vistas/select_cargo.php');
-                                                        ?> 
                                                     </div>
                                                 </div> 
                                                    
