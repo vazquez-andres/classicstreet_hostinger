@@ -1,10 +1,8 @@
-
 	<select name="cargo" id="cargo" class="form-control">
 		<option>Selecciona un Cargo</option>                        
 		
 <?php
 
-include('controlador/conexion.php');
 $pdo = connect();
 try {
     $sql = "call sp_listarCargo;";
