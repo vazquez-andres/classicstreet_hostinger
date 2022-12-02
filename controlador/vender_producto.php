@@ -71,7 +71,6 @@ try {
 	//echo 'PDOException : '.  $e->getMessage();
 }
 
-// Lista de alumnos a ver
 include('../vistas/lista_ventas.php');
 include('../vistas/lista_stock.php');
 ?>

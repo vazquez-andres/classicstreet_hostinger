@@ -19,4 +19,5 @@ try {
 	echo 'PDOException : '.  $e->getMessage();
 }
 
+include('../vistas/lista_usuarios.php');
 ?>
