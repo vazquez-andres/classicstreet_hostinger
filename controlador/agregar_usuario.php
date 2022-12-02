@@ -7,7 +7,8 @@ try {
 	$sql = "CALL sp_agregarUsuario(:usuario, :correo, :password, :puesto); ";
 	$query = $pdo->prepare($sql);
 	$encriptar = $_POST['password'];
-	$encriptado = hash($_POST['password']);
+	$encriptado = hash("sha256",$_POST['password']);
+	echo $encriptado;
 	$query->bindParam(':usuario', $_POST['usuario'], PDO::PARAM_STR);
 	$query->bindParam(':correo', $_POST['correo'], PDO::PARAM_STR);
 	$query->bindParam(':password', $encriptado , PDO::PARAM_STR);
