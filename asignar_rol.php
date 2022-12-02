@@ -141,12 +141,12 @@ if($filas['id_cargo']=='1'){ //administrador
                             <div class="app-page-title">
                                 <div class="page-title-wrapper">
                                     <div class="page-title-heading">
-                                        <div class="page-title-icon">
+                                        <div class="page-title-icon">º
                                             <i class="fa fa-user icon-gradient bg-malibu-beach">
                                             </i>
                                         </div>
-                                        <div>Asingar Rol
-                                            <div class="page-title-subheading">Aqui podrás cambiar el rol de los usuarios.
+                                        <div>Añadir Usuarios
+                                            <div class="page-title-subheading">Aqui podrás agregar usuarios nuevos.
                                             </div>
                                         </div>
                                     </div>
@@ -155,22 +155,35 @@ if($filas['id_cargo']=='1'){ //administrador
 
                                 <div class="main-card mb-3 card">
                                     <div class="card-body"><h5 class="card-title">Completa los Campos.</h5>
-                                        <form class=""form-row>
+                                        <form class="">
                                             <div class="form-row">
-                                                <div class="col-md-6">
-                                                     <?php 
-                                                      include('vistas/select_usuarios.php');
-                                                      ?>  
+                                                <div class="col-md-3">
+                                                    <div class="position-relative form-group">
+                                                     <input name="usuario" id="usuario" placeholder="Usuario" type="text"class="form-control">
+                                                    </div>
                                                 </div>
-                                                 <div class="col-md-6">
-                                                      <?php 
-                                                      include('vistas/select_cargo.php');
-                                                      ?>  
+                                                 <div class="col-md-3">
+                                                    <div class="position-relative form-group">
+                                                    <input name="correo" id="correo" placeholder="Correo@ejemplo.com" type="email" class="form-control">
+                                                    </div>
                                                 </div> 
-                                                <div class="col-md-12">
-                                                <input type="button" class="mt-2 btn btn-success" value="Guardar" onclick="asignar_rol()">
+                                                <div class="col-md-3">
+                                                    <div class="position-relative form-group">
+                                                   <input name="password" id="password" placeholder="contraseña" type="password" class="form-control">
+                                                    </div>
                                                 </div> 
-                                            
+                                                 <div class="col-md-3">
+                                                    <div class="position-relative form-group">
+                                                    <select class="form-control" id="puesto">
+                                                    <option>Puesto</option>
+                                                    <option value="1">Administrador</option>
+                                                    <option value="2">Ventas</option>
+                                                    
+                                                </select>
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                             <input type="button" class="mt-2 btn btn-success" value="Guardar" onclick="agregar_usuario()">
 
                                         </form>
                                     </div>
@@ -211,7 +224,7 @@ if($filas['id_cargo']=='1'){ //administrador
         </div>
     </div>
     <script type="text/javascript" src="./assets/scripts/main.js"></script>
-    <script type="text/javascript" src="./controlador/script.js"></script>
+    <script type="text/javascript" src="controlador/script.js"></script>
     </body>
     </html>
 
