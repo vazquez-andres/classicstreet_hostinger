@@ -142,12 +142,12 @@
 
                                 <div class="main-card mb-3 card">
                                     <div class="card-body"><h5 class="card-title">Cargar Base de Datos</h5>
-                                    <a href="controlador/backup_database/drop_tables.php"><input type="button" class="mt-2 btn btn-success" value="Preparar Base de Datos"></a>
+                                    <a href="drop_tables.php"><input type="button" class="mt-2 btn btn-success" value="Preparar Base de Datos"></a>
                                     <?php 
-                                include('controlador/backup_database/carpetas.php'); 
+                                include('carpetas.php'); 
 
                             ?> 
-                                        <form class="" action="controlador/backup_database/regresar_en_el_tiempo.php" method="POST" enctype="multipart/form-data">        
+                                        <form class="" action="regresar_en_el_tiempo.php" method="POST" enctype="multipart/form-data">        
 					                    <input type="file" name="fileToUpload" class="form-control" id="fileToUpload">
                                           <input type="submit" class="mt-2 btn btn-info" value="Cargar Base de Datos">
 
