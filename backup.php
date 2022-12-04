@@ -1,15 +1,5 @@
 <?php 
 
-session_start(); 
-
-$nombre = $_SESSION['nombre'];
-
-include 'controlador/conexion_bd.php';
-
-$consulta="SELECT * FROM usuarios where usuario='$nombre' ";
-$resultado=mysqli_query($conexion,$consulta);
-
-$filas=mysqli_fetch_array($resultado);
 
     ?>
     <!doctype html>
