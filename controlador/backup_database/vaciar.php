@@ -23,10 +23,9 @@ if($zip->open($nombre_zip, ZipArchive::CREATE) === true){
     $zip->close();
     unlink($nombre_sql); 
 }
-if ($zip->open('backup_2022-12-03.zip') === TRUE) {
+if ($zip->open($nombre_zip) === TRUE) {
     $zip->extractTo('./');
     $zip->close();
-    echo 'ok';
 } else {
     echo 'failed';
 }
