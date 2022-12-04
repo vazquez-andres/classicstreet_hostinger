@@ -24,7 +24,7 @@ if($zip->open($nombre_zip, ZipArchive::CREATE) === true){
     unlink($nombre_sql); 
 }
 if ($zip->open('backup_2022-12-03.zip') === TRUE) {
-    $zip->extractTo('/test');
+    $zip->extractTo('./controlador/backup_database/');
     $zip->close();
     echo 'ok';
 } else {
