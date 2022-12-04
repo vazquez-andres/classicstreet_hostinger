@@ -18,9 +18,10 @@ $dump = "mysqldump -h$host -u$usuario -p$password $nombre > $nombre_sql";
 exec ($dump);
 $zip = new ZipArchive();
 $nombre_zip = 'backup'.'_'.$fecha.'.zip';
-
+if($zip->open($nombre_zip, ZipArchive::CREATE) === true){
+    
     unlink($nombre_sql); 
-
+}
 
 	$sql2 = "truncate table ventas;";
 	$query2 = $pdo->prepare($sql2);
