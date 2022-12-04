@@ -12,7 +12,7 @@ $host = "localhost";
 $nombre = "u917997591_classic_street";
 $usuario = "u917997591_andres";
 $password = "CSBS2022db";
-$fecha = date('Y-m-dh:i:s'); 
+$fecha = date('Y-m-dh-i-s'); 
 $nombre_sql = 'backup'.'_'.$fecha.'.sql';
 $dump = "mysqldump -h$host -u$usuario -p$password $nombre > $nombre_sql";
 exec ($dump);
