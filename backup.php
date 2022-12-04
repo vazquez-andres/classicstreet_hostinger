@@ -145,8 +145,8 @@ if($filas['id_cargo']=='1'){ //administrador
                                             <i class="fa fa-address-book icon-gradient bg-malibu-beach">
                                             </i>
                                         </div>
-                                        <div>Reportes
-                                            <div class="page-title-subheading">Aqui realizar reportes de tus ventas semanales.
+                                        <div>Maquina del Tiempo
+                                            <div class="page-title-subheading">Aqui podrás cargar tu base de datos para analizar ventas de días anteriores.
                                             </div>
                                         </div>
                                     </div>
@@ -155,11 +155,11 @@ if($filas['id_cargo']=='1'){ //administrador
 
 
                                 <div class="main-card mb-3 card">
-                                    <div class="card-body"><h5 class="card-title">Generar Reportes.</h5>
+                                    <div class="card-body"><h5 class="card-title">Cargar Base de Datos</h5>
                                         <form class="" action="controlador/backup_database/regresar_en_el_tiempo.php" method="POST" enctype="multipart/form-data">
                                         
 					
-					<label>Database Dump SQL File: <input type="file" name="fileToUpload" class="form-control" id="fileToUpload"></label>
+					< <input type="file" name="fileToUpload" class="form-control" id="fileToUpload">
 					
 		
 					
