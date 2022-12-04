@@ -31,7 +31,7 @@ try {
     
     fclose($fp);
     
-    echo "Database imported successfully";
+    header("location:../../backup.php");
     
 
 
