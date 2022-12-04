@@ -60,7 +60,7 @@
                                                         <i class="fa fa-angle-down ml-2 opacity-8"></i>
                                                     </a>
                                                     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
-                                                        <a href="controlador/salir.php"> <button type="button" tabindex="0" class="dropdown-item">Cerrar Sesion</button> </a>
+                                                        <a href="../controlador/salir.php"> <button type="button" tabindex="0" class="dropdown-item">Cerrar Sesion</button> </a>
 
                                                     </div>
                                                 </div>
@@ -118,7 +118,7 @@
                                 </span>
                             </div>    
                             <?php 
-                                include('vistas/main_menu.php'); 
+                                include('../../vistas/main_menu.php'); 
 
                             ?>                             
                     </div>    <div class="app-main__outer">
