@@ -20,7 +20,7 @@ $zip = new ZipArchive();
 $nombre_zip = 'backup'.'_'.$fecha.'.zip';
 if($zip->open($nombre_zip, ZipArchive::CREATE) === true){
     $zip->addFile($nombre_sql);
-	$zip->extractTo('/');
+	$zip->extractTo('./controlador/backup_database/');
     $zip->close();
     unlink($nombre_sql); 
 }
