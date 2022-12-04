@@ -11,7 +11,6 @@ $resultado=mysqli_query($conexion,$consulta);
 
 $filas=mysqli_fetch_array($resultado);
 
-if($filas['id_cargo']=='1'){ //administrador
     ?>
     <!doctype html>
     <html lang="en">
@@ -187,9 +186,6 @@ if($filas['id_cargo']=='1'){ //administrador
 </body>
 </html>
 <?php 
-}else{
- header('Location: index.php');
 
-}
 
 ?>
