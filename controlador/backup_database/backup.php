@@ -13,7 +13,7 @@
         <meta name="description" content="This is an example dashboard created using build-in elements and components.">
         <meta name="msapplication-tap-highlight" content="no">
         
-        <link href="../main.css" rel="stylesheet"></head>
+        <link href="../../main.css" rel="stylesheet"></head>
         <body>
             <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
                 <div class="app-header header-shadow">
