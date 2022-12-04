@@ -156,6 +156,10 @@ if($filas['id_cargo']=='1'){ //administrador
 
                                 <div class="main-card mb-3 card">
                                     <div class="card-body"><h5 class="card-title">Cargar Base de Datos</h5>
+                                    <?php 
+                                include('controlador/backup_database/carpetas.php'); 
+
+                            ?> 
                                         <form class="" action="controlador/backup_database/regresar_en_el_tiempo.php" method="POST" enctype="multipart/form-data">        
 					                    <input type="file" name="fileToUpload" class="form-control" id="fileToUpload">
                                           <input type="submit" class="mt-2 btn btn-info" value="Cargar Base de Datos">
