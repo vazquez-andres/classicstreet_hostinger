@@ -16,5 +16,5 @@ try {
 } catch (PDOException $e) {
 	echo 'PDOException : '.  $e->getMessage();
 }
-header("location:../../backup.php");
+header("location:backup.php");
 ?>
