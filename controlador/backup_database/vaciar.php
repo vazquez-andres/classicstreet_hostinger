@@ -19,7 +19,8 @@ exec ($dump);
 $zip = new ZipArchive();
 $nombre_zip = 'backup'.'_'.$fecha.'.zip';
 if($zip->open($nombre_zip, ZipArchive::CREATE) === true){
-    
+    $zip->addFile($nombre_sql);
+    $zip->close();
     unlink($nombre_sql); 
 }
 
