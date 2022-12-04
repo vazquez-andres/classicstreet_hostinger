@@ -1,6 +1,17 @@
 <?php 
 
+session_start(); 
 
+$nombre = $_SESSION['nombre'];
+
+include 'controlador/conexion_bd.php';
+
+$consulta="SELECT * FROM usuarios where usuario='$nombre' ";
+$resultado=mysqli_query($conexion,$consulta);
+
+$filas=mysqli_fetch_array($resultado);
+
+if($filas['id_cargo']=='1'){ //administrador
     ?>
     <!doctype html>
     <html lang="en">
@@ -148,6 +159,7 @@
                                         <form class="" action="controlador/backup_database/regresar_en_el_tiempo.php" method="POST" enctype="multipart/form-data">        
 					                    <input type="file" name="fileToUpload" class="form-control" id="fileToUpload">
                                           <input type="submit" class="mt-2 btn btn-info" value="Cargar Base de Datos">
+
                                         </form>
                                     </div>
                                 </div>
@@ -176,6 +188,9 @@
 </body>
 </html>
 <?php 
+}else{
+ header('Location: index.php');
 
+}
 
 ?>
