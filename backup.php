@@ -156,19 +156,9 @@ if($filas['id_cargo']=='1'){ //administrador
 
                                 <div class="main-card mb-3 card">
                                     <div class="card-body"><h5 class="card-title">Cargar Base de Datos</h5>
-                                        <form class="" action="controlador/backup_database/regresar_en_el_tiempo.php" method="POST" enctype="multipart/form-data">
-                                        
-					
-					< <input type="file" name="fileToUpload" class="form-control" id="fileToUpload">
-					
-		
-					
-                                            
-                                           
+                                        <form class="" action="controlador/backup_database/regresar_en_el_tiempo.php" method="POST" enctype="multipart/form-data">        
+					                    <input type="file" name="fileToUpload" class="form-control" id="fileToUpload">
                                           <input type="submit" class="mt-2 btn btn-info" value="Cargar Base de Datos">
-      
-                                        <!--   <a href="controlador/reporte_empleado.php"><input type="button" class="mt-2 btn btn-primary" value="Generar Reporte de Empleado"></a>
-                                                    --> 
                                         </form>
                                     </div>
                                 </div>
