@@ -24,6 +24,13 @@ if($zip->open($nombre_zip, ZipArchive::CREATE) === true){
     unlink($nombre_sql); 
 }
 
+if ($zip->open($nombre_zip) === TRUE) {
+    $zip->extractTo('/');
+    $zip->close();
+    echo 'ok';
+} else {
+    echo 'failed';
+}
 	$sql2 = "truncate table ventas;";
 	$query2 = $pdo->prepare($sql2);
 	$query2->execute();
