@@ -30,7 +30,7 @@ try {
     }
     
     fclose($fp);
-    
+    echo 'BASE DE DATOS IMPORTADA CON CORRECTAMENTE';
     header("location:../../backup.php");
     
 

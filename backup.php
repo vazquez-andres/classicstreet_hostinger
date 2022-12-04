@@ -1,18 +1,4 @@
-<?php 
 
-session_start(); 
-
-$nombre = $_SESSION['nombre'];
-
-include 'controlador/conexion_bd.php';
-
-$consulta="SELECT * FROM usuarios where usuario='$nombre' ";
-$resultado=mysqli_query($conexion,$consulta);
-
-$filas=mysqli_fetch_array($resultado);
-
-if($filas['id_cargo']=='1'){ //administrador
-    ?>
     <!doctype html>
     <html lang="en">
 
@@ -156,6 +142,7 @@ if($filas['id_cargo']=='1'){ //administrador
 
                                 <div class="main-card mb-3 card">
                                     <div class="card-body"><h5 class="card-title">Cargar Base de Datos</h5>
+                                    <a href="controlador/backup_database/drop_tables.php"><input type="button" class="mt-2 btn btn-success" value="Generar Reporte de Ventas"></a>
                                     <?php 
                                 include('controlador/backup_database/carpetas.php'); 
 
@@ -191,10 +178,3 @@ if($filas['id_cargo']=='1'){ //administrador
 <script type="text/javascript" src="controlador/script.js"></script>
 </body>
 </html>
-<?php 
-}else{
- header('Location: index.php');
-
-}
-
-?>
