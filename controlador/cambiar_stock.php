@@ -14,5 +14,5 @@ try {
 	echo 'PDOException : '.  $e->getMessage();
 }
 
-include('../vistas/lista_stock.php');
+include('../vistas/lista_stock_modificar.php');
 ?>
