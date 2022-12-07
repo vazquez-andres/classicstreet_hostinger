@@ -25,7 +25,7 @@ try {
         $fecha_completa= $diassemana[date('w')]." ".$dias[date('d')-1]." de ".$meses[date('n')-1]. " del ".date('Y');
 
         $mensaje = "Le informamos que su stock de after shave esta a punto de terminarse,\n le sugerimos contactar con el proveedor para evitar inconvenientes.\n".$fecha_completa;
-        $mensaje = wordwrap($mensaje, 70, "\r\n");
+        $mensaje = wordwrap($mensaje, 90, "\r\n");
         mail('andres_vazquezocampo@outlook.es', '¡AVISO EL STOCK DE AFTER SHAVE ESTA POR TERMINARSE!', $mensaje);
     
     
