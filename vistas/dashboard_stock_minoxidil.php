@@ -17,14 +17,9 @@ if($rs['cantidad']<3){
     alert("El stock de minoxidil esta por terminarse");
     
     </script>';
-    // El mensaje
-    $mensaje = "Línea 1\r\nLínea 2\r\nLínea 3";
-
-    // Si cualquier línea es más larga de 70 caracteres, se debería usar wordwrap()
+    $mensaje = "Le informamos que su stock de minoxidil está a punto de terminarse,\r\n le sugerimos contactar con el proveedor para evitar inconvenientes.";
     $mensaje = wordwrap($mensaje, 70, "\r\n");
-
-    // Enviarlo
-    mail('andres_vazquezocampo@outlook.es', 'Mi título', $mensaje);
+    mail('andres_vazquezocampo@outlook.es', '¡AVISO EL STOCK DE MINOXIDIL ESTÁ POR TERMINARSE!', $mensaje);
 }
 } catch (PDOException $e) {
 	echo 'PDOException : '.  $e->getMessage();

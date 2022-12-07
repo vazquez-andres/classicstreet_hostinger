@@ -18,6 +18,10 @@ try {
         alert("El stock de after shave esta por terminarse");
         
         </script>';
+        $mensaje = "Le informamos que su stock de after shave está a punto de terminarse,\r\n le sugerimos contactar con el proveedor para evitar inconvenientes.";
+        $mensaje = wordwrap($mensaje, 70, "\r\n");
+        mail('andres_vazquezocampo@outlook.es', '¡AVISO EL STOCK DE AFTER SHAVE ESTÁ POR TERMINARSE!', $mensaje);
+    
     
     }
 } catch (PDOException $e) {
