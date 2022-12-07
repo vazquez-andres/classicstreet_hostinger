@@ -72,5 +72,4 @@ try {
 }
 
 include('../vistas/lista_ventas.php');
-include('../vistas/lista_stock.php');
 ?>

@@ -208,7 +208,6 @@ if($filas['id_cargo']=='1'){ //administrador
                                             <?php 
 
                                             include('vistas/lista_ventas.php'); 
-                                            include('vistas/lista_stock.php');
                                             ?>
                                         </div>
 
