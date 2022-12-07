@@ -208,7 +208,7 @@ if($filas['id_cargo']=='1'){ //administrador
                                             <?php 
 
                                             include('vistas/lista_ventas.php'); 
-
+                                            include('vistas/lista_stock.php');
                                             ?>
                                         </div>
 
@@ -217,28 +217,6 @@ if($filas['id_cargo']=='1'){ //administrador
                                     <!-- content -->
 
                                 </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-
-                                        <hr>
-                                        <div id="list_container">
-                                            <?php 
-
-
-                                            include('vistas/lista_stock.php'); 
-                                            ?>
-                                        </div>
-
-                                        <!-- lista_contenedor --> 
-                                    </div>
-                                    <!-- content -->
-
-                                </div>
-
-
-
-
 
                             </div>
 
