@@ -114,7 +114,7 @@ foreach ($dbo->query($sql3) as $row) {
 
     $pdf->SetX(10);
     setlocale(LC_MONETARY, 'es_MX');
-    $data1=$row['COUNT(id_venta)'];
+    $resultado=$row['COUNT(id_venta)'];
     $pdf->Cell($width_cell[5],7,"MOSTRANDO ".$resultado." REGISTROS",2,0,'L',$fill);
     $fill = !$fill; 
     }    
